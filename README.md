@@ -1,4 +1,4 @@
-# Project Title
+# Ted Lasso Random Quotes Site
 
 Simple website displaying quotes from the TV Series, Ted Lasso.
 
