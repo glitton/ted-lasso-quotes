@@ -202,7 +202,7 @@ img.author-img {
   margin: 0 auto;
 }
 .btn {
-  width: 40%;
+  width: 50%;
   margin: 2rem auto;
   padding: 1rem 0.5rem;
 }
@@ -210,6 +210,9 @@ img.author-img {
   img.author-img {
     width: 500px;
     height: 500px;
+  }
+  .btn {
+    width: 20%;
   }
 }
 /*
