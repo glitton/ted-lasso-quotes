@@ -3,8 +3,8 @@
 const url = "https://tedlassoquotes.com/v1/quote";
 
 const btn = document.querySelector(".btn");
-const quoteResult = document.querySelector(".quote-result");
-const quoteAuthor = document.querySelector(".quote-author");
+const result = document.querySelector(".result");
+const author = document.querySelector(".author");
 const img = document.querySelector(".author-img");
 
 btn.addEventListener("click", () => {
@@ -12,7 +12,7 @@ btn.addEventListener("click", () => {
 });
 
 const fetchTedLassoQuote = async () => {
-  quoteResult.textContent = "Loading ...";
+  result.textContent = "Loading ...";
 
   try {
     const response = await fetch(url);
@@ -22,11 +22,11 @@ const fetchTedLassoQuote = async () => {
     }
     const data = await response.json();
     // console.log(data);
-    quoteResult.textContent = data.quote;
-    quoteAuthor.textContent = data.author;
+    result.textContent = data.quote;
+    author.textContent = data.author;
     img.src = data.profile_img;
   } catch (error) {
-    quoteResult.textContent = "There was an error loading the quote.";
+    result.textContent = "There was an error loading the quote.";
   }
 };
 
