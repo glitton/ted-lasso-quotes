@@ -155,13 +155,7 @@ p {
 }
 .section-title {
   text-align: center;
-  margin-bottom: 4rem;
-}
-.section-title h2 {
-  text-transform: uppercase;
-}
-.section-title span {
-  color: var(--clr-primary-5);
+  margin-bottom: 2rem;
 }
 
 /*
@@ -179,13 +173,18 @@ Quotes
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
 }
+.section-title-ted {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--clr-primary-5);
+}
 .ted {
-  font-size: 5rem;
-  letter-spacing: 0.75rem;
+  font-size: 4rem;
+  letter-spacing: 0.4rem;
 }
 img.author-img {
-  width: 400px;
-  height: 400px;
+  width: 260px;
+  height: 260px;
   border-radius: var(--radius);
   display: block;
   object-fit: contain;
@@ -195,7 +194,7 @@ img.author-img {
   margin: 3rem auto 2rem auto;
   text-transform: none;
   padding: 1.5rem 3rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   text-align: center;
 }
 .author {
@@ -230,7 +229,6 @@ Footer
   margin-bottom: 0.5rem;
 }
 p.copyright {
-  text-transform: capitalize;
   letter-spacing: 0.15rem;
   color: var(--clr-white);
   margin-bottom: 0;
